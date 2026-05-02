@@ -4,16 +4,9 @@ const axios = require('axios');
 const app = express();
 app.use(express.json());
 
-/*
- Task format:
- {
-   id: number,
-   time: number,
-   importance: number
- }
-*/
 
-// 🔹 0/1 Knapsack Optimization (Efficient)
+
+
 function optimizeTasks(tasks, maxHours) {
     const dp = new Array(maxHours + 1).fill(0);
 
